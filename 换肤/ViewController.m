@@ -43,11 +43,12 @@
 }
 -(void)changeSkinWithColor:(NSString *)skinColor{
     //1.拼接图片名称，设置对应皮肤的图片
-    NSString *faceImageName = [NSString stringWithFormat:@"%@face",skinColor];
+    NSString *faceImageName = [NSString stringWithFormat:@"skin/%@/face",skinColor];
+    //imageNamed 加载的是NSBundle下的图片,bundle下直接跟文件的路径
     self.faceImageView.image = [UIImage imageNamed:faceImageName];
-     NSString *heartImageName = [NSString stringWithFormat:@"%@heart",skinColor];
+     NSString *heartImageName = [NSString stringWithFormat:@"skin/%@/heart",skinColor];
     self.heartImageView.image = [UIImage imageNamed:heartImageName];
-     NSString *rectImageName = [NSString stringWithFormat:@"%@rect",skinColor];
+     NSString *rectImageName = [NSString stringWithFormat:@"skin/%@/rect",skinColor];
     self.rectImageView.image = [UIImage imageNamed:rectImageName];
     //2.记录用户选中的皮肤
     [[NSUserDefaults standardUserDefaults]setObject:skinColor forKey:@"skinColor"];
