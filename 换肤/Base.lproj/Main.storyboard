@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZBu-hC-pCD">
+                                <rect key="frame" x="112.5" y="50" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="azW-lw-9QJ"/>
+                                    <constraint firstAttribute="height" constant="150" id="urP-Ya-7r1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eKb-r3-7k9">
+                                <rect key="frame" x="112.5" y="220" width="150" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bfN-Aq-iyb">
+                                <rect key="frame" x="112.5" y="390" width="150" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUo-dZ-2Zw">
+                                <rect key="frame" x="20" y="607" width="62" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Uh-C4-UBh"/>
+                                </constraints>
+                                <state key="normal" title="蓝色皮肤"/>
+                                <connections>
+                                    <action selector="switchToBlueSkin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IsA-HH-UR7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-93-P7o">
+                                <rect key="frame" x="156.5" y="607" width="62" height="40"/>
+                                <state key="normal" title="红色皮肤"/>
+                                <connections>
+                                    <action selector="switchToRedSkin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8B-v5-tQE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keL-Y6-4Ur">
+                                <rect key="frame" x="293" y="607" width="62" height="40"/>
+                                <state key="normal" title="绿色皮肤"/>
+                                <connections>
+                                    <action selector="switchToGreenSkin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="npR-cN-Sdp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="换肤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8N-V6-9dg">
+                                <rect key="frame" x="20" y="50" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="keL-Y6-4Ur" firstAttribute="height" secondItem="fUo-dZ-2Zw" secondAttribute="height" id="1I6-DT-FO3"/>
+                            <constraint firstItem="keL-Y6-4Ur" firstAttribute="bottom" secondItem="rOb-93-P7o" secondAttribute="bottom" id="5O1-B8-sfn"/>
+                            <constraint firstItem="keL-Y6-4Ur" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="7Ts-j5-A9p"/>
+                            <constraint firstItem="ZBu-hC-pCD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="C0A-GL-8an"/>
+                            <constraint firstItem="fUo-dZ-2Zw" firstAttribute="bottom" secondItem="rOb-93-P7o" secondAttribute="bottom" id="Dga-QM-RZe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="keL-Y6-4Ur" secondAttribute="trailing" constant="20" id="Dzu-jb-jAK"/>
+                            <constraint firstItem="bfN-Aq-iyb" firstAttribute="width" secondItem="eKb-r3-7k9" secondAttribute="width" id="EZm-FO-tR4"/>
+                            <constraint firstItem="bfN-Aq-iyb" firstAttribute="height" secondItem="eKb-r3-7k9" secondAttribute="height" id="HZY-GZ-5nr"/>
+                            <constraint firstItem="rOb-93-P7o" firstAttribute="height" secondItem="fUo-dZ-2Zw" secondAttribute="height" id="JXq-eQ-cc5"/>
+                            <constraint firstItem="rOb-93-P7o" firstAttribute="width" secondItem="fUo-dZ-2Zw" secondAttribute="width" id="LIA-Gj-eMA"/>
+                            <constraint firstItem="eKb-r3-7k9" firstAttribute="height" secondItem="ZBu-hC-pCD" secondAttribute="height" id="O2B-tf-kWB"/>
+                            <constraint firstItem="fUo-dZ-2Zw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RVc-4f-uYs"/>
+                            <constraint firstItem="keL-Y6-4Ur" firstAttribute="width" secondItem="fUo-dZ-2Zw" secondAttribute="width" id="S9x-02-BmK"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fUo-dZ-2Zw" secondAttribute="trailing" constant="20" symbolic="YES" id="VaQ-6H-Y7t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rOb-93-P7o" secondAttribute="bottom" constant="20" id="Veg-QH-wTm"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W8N-V6-9dg" secondAttribute="trailing" constant="20" symbolic="YES" id="Wgd-AI-YTb"/>
+                            <constraint firstItem="bfN-Aq-iyb" firstAttribute="top" secondItem="eKb-r3-7k9" secondAttribute="bottom" constant="20" id="e4a-Hm-Nst"/>
+                            <constraint firstItem="eKb-r3-7k9" firstAttribute="width" secondItem="ZBu-hC-pCD" secondAttribute="width" id="oID-iQ-RXZ"/>
+                            <constraint firstItem="eKb-r3-7k9" firstAttribute="top" secondItem="ZBu-hC-pCD" secondAttribute="bottom" constant="20" id="pfa-Rt-gSP"/>
+                            <constraint firstItem="W8N-V6-9dg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rEe-H2-dvk"/>
+                            <constraint firstItem="bfN-Aq-iyb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="udP-kI-PLW"/>
+                            <constraint firstItem="ZBu-hC-pCD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="usY-y8-YkN"/>
+                            <constraint firstItem="eKb-r3-7k9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vHq-gw-ieR"/>
+                            <constraint firstItem="W8N-V6-9dg" firstAttribute="top" secondItem="ZBu-hC-pCD" secondAttribute="top" id="yW1-MI-qbN"/>
+                            <constraint firstItem="rOb-93-P7o" firstAttribute="centerX" secondItem="bfN-Aq-iyb" secondAttribute="centerX" id="z7C-SV-aTU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="faceImageView" destination="ZBu-hC-pCD" id="pN3-d9-DfQ"/>
+                        <outlet property="heartImageView" destination="eKb-r3-7k9" id="dPD-sz-h3c"/>
+                        <outlet property="rectImageView" destination="bfN-Aq-iyb" id="Ulb-xS-LkC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>
