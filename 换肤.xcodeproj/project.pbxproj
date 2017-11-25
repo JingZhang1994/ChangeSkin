@@ -14,6 +14,8 @@
 		18F919151FC8006400B74DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F919131FC8006400B74DEF /* LaunchScreen.storyboard */; };
 		18F919181FC8006400B74DEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F919171FC8006400B74DEF /* main.m */; };
 		18F919351FC8149100B74DEF /* skin in Resources */ = {isa = PBXBuildFile; fileRef = 18F919341FC8149100B74DEF /* skin */; };
+		18F919381FC81B8F00B74DEF /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F919371FC81B8F00B74DEF /* TwoViewController.m */; };
+		18F9193B1FC81C2900B74DEF /* SkinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9193A1FC81C2900B74DEF /* SkinTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		18F919161FC8006400B74DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18F919171FC8006400B74DEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18F919341FC8149100B74DEF /* skin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin; sourceTree = "<group>"; };
+		18F919361FC81B8F00B74DEF /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		18F919371FC81B8F00B74DEF /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		18F919391FC81C2900B74DEF /* SkinTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkinTool.h; sourceTree = "<group>"; };
+		18F9193A1FC81C2900B74DEF /* SkinTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkinTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,10 @@
 				18F919091FC8006400B74DEF /* AppDelegate.m */,
 				18F9190B1FC8006400B74DEF /* ViewController.h */,
 				18F9190C1FC8006400B74DEF /* ViewController.m */,
+				18F919361FC81B8F00B74DEF /* TwoViewController.h */,
+				18F919371FC81B8F00B74DEF /* TwoViewController.m */,
+				18F919391FC81C2900B74DEF /* SkinTool.h */,
+				18F9193A1FC81C2900B74DEF /* SkinTool.m */,
 				18F9190E1FC8006400B74DEF /* Main.storyboard */,
 				18F919111FC8006400B74DEF /* Assets.xcassets */,
 				18F919341FC8149100B74DEF /* skin */,
@@ -149,6 +159,8 @@
 				18F9190D1FC8006400B74DEF /* ViewController.m in Sources */,
 				18F919181FC8006400B74DEF /* main.m in Sources */,
 				18F9190A1FC8006400B74DEF /* AppDelegate.m in Sources */,
+				18F919381FC81B8F00B74DEF /* TwoViewController.m in Sources */,
+				18F9193B1FC81C2900B74DEF /* SkinTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
